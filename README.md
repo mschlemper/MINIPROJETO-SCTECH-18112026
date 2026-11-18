@@ -1,7 +1,9 @@
 # MiniProjeto DataView: Exploração e Análise de Dados de Vendas
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mschlemper/MINIPROJETO-SCTECH-18112026/blob/main/dataview.ipynb)
+
 ## Sobre o projeto
-O **DataView** é um projeto de análise exploratória de dados (EDA) de vendas, desenvolvido em Python utilizando o Google Colab. O fluxo desenvolvido lê, limpa, transforma, analisa e visualiza um dataset de vendas sintético, gerando relatórios úteis, métricas consolidadas e gráficos para subsidiar tomadas de decisões gerenciais.
+O **DataView** é um projeto de análise exploratória de dados (EDA) de vendas e Engenharia de Dados, desenvolvido em Python utilizando o Google Colab. O fluxo desenvolvido lê, limpa, transforma, analisa e visualiza um dataset de vendas sintético, gerando relatórios úteis, métricas consolidadas, análises de BI e arquivos finais prontos para tomada de decisões gerenciais.
 
 ## O que o projeto analisa
 * Receita total e volume de vendas por mês e trimestre.
@@ -9,30 +11,18 @@ O **DataView** é um projeto de análise exploratória de dados (EDA) de vendas,
 * Desempenho e ticket médio por região geográfica.
 * Segmentação de clientes por nível de gasto (Bronze, Prata, Ouro).
 * Comparação entre dados brutos, tratados com outliers (v1) e sem outliers (v2).
-* Exportação de relatórios analíticos em CSV e JSON.
+* Exportação de relatórios analíticos estruturados em CSV e JSON.
 
-## Objetivo
-Praticar e aplicar os seguintes conceitos de programação e análise de dados:
-* **Lógica de Programação:** Estruturas de controle, condicionais, repetições, manipulação de strings com Regex (`re.sub`) e tratamento de datas com o módulo `datetime`.
-* **Funções e Reutilização:** Modularização de pipelines, funções lambda e funções de ordem superior (callbacks).
-* **Manipulação de Dados (Pandas):** Leitura de CSV, limpeza, imputação, filtros complexos e agrupamentos (`groupby`).
-* **Operações Vetorizadas (NumPy):** Manipulação de arrays, broadcasting, operações vetorizadas de classificação (`np.select`) e cálculos estatísticos (média, mediana, desvio padrão, percentis).
-* **Visualização de Dados (Matplotlib & Seaborn):** Criação, personalização e salvamento em arquivo de gráficos de linha, barra e boxplot.
+## Diferenciais do Pipeline Técnico
+* **Limpeza Avançada:** Remoção automática de sujeiras em strings com expressões regulares (Regex) e integridade de datas.
+* **Tratamento de Outliers (IQR):** Algoritmo matemático para detecção de anomalias baseado em amplitude interquartílica, removendo ruídos sem intervenção manual.
+* **Estatística Vetorizada:** Processamento e broadcasting com NumPy para computação rápida de percentis e distribuição de receitas.
 
-## Como executar
-
-### No Google Colab (Recomendado)
-1. Faça o upload do notebook `dataview.ipynb` no ambiente do Colab.
-2. Execute todas as células em ordem sequencial (de cima para baixo).
-3. O código gerará automaticamente as pastas e os arquivos de dados necessários.
-
-### Localmente com VS Code
-1. Instale o Python 3.10+ e o editor VS Code.
-2. Instale as dependências executando o comando abaixo no terminal:
-   ```bash
-   pip install pandas numpy matplotlib seaborn
-   ```
-3. Execute o notebook ou script `dataview.ipynb` localmente.
+## Como Executar e Reproduzir
+O projeto foi planejado para ser executável de ponta a ponta sem configurações manuais complexas:
+1. Acesse o notebook pelo link do Colab no topo desta documentação ou baixe o arquivo `.ipynb` do repositório.
+2. Execute todas as células em ordem sequencial.
+3. Todos os diretórios (`data/` e `outputs/`) e arquivos serão automaticamente criados, processados e salvos localmente.
 
 ## Estrutura de pastas gerada
 ```text
@@ -58,6 +48,3 @@ projeto/
 * **Linguagem:** Python 3.10+
 * **Bibliotecas:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `re`, `datetime`, `os`, `json`, `random`
 * **Controle de Versão:** GitHub
-
-## Vídeo de demonstração
-*[Inserir link do Google Drive ou YouTube aqui]*
